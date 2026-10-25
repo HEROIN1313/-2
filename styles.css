@@ -88,6 +88,10 @@ footer {
     margin-bottom: 8px;
 }
 
+.contacts {
+    flex-shrink: 0; /* Запобігає стисканню блоку контактів */
+}
+
 .contacts p {
     margin-bottom: 4px;
 }
@@ -97,6 +101,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 24px; /* Обов'язковий простір між описом зліва та контактами справа */
     background-color: #ffffff;
     border: 1px solid #e5e7eb;
     border-radius: 8px;
