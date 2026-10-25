@@ -4,62 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Резюме | Роман</title>
+
+    <!-- 1. Зовнішнє підключення стилів (External) -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- 2. Внутрішнє підключення стилів (Internal) -->
+    <style>
+        .highlight {
+            color: #1d4ed8;
+            font-weight: 600;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Роман</h1>
-        <p>Студент спеціальності «Кібербезпека» | Trainee Security Analyst / Web Developer</p>
-        <address>
-            <p>Місто: Львів, Україна</p>
-            <p>Email: <a href="mailto:roman.example@gmail.com">roman.example@gmail.com</a></p>
-            <p>GitHub: <a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com/profile</a></p>
-        </address>
-    </header>
+    <div class="container">
+        <header id="main-header">
+            <div>
+                <h1>Роман</h1>
+                <!-- 3. Вбудований стиль (Inline) -->
+                <p class="subtitle" style="font-size: 1.05rem; color: #4b5563;">
+                    Студент спеціальності «<span class="highlight">Кібербезпека</span>» | Trainee Security Analyst / Web Developer
+                </p>
+            </div>
+            <address class="contacts">
+                <p>Місто: Львів, Україна</p>
+                <p>Email: <a href="mailto:roman.example@gmail.com">roman.example@gmail.com</a></p>
+                <p>GitHub: <a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com/profile</a></p>
+            </address>
+        </header>
 
-    <main>
-        <section>
-            <h2>Про себе</h2>
-            <p>Студент кафедри захисту інформації Національного університету «Львівська політехніка». Захоплююся мережевою безпекою, аналізом логів, адмініструванням Linux та автоматизацією завдань за допомогою Python і C#.</p>
-        </section>
+        <main>
+            <section class="card">
+                <h2>Про себе</h2>
+                <p>Студент кафедри захисту інформації Національного університету «Львівська політехніка». Захоплююся мережевою безпекою, аналізом логів, адмініструванням Linux та автоматизацією завдань за допомогою Python і C#.</p>
+            </section>
 
-        <section>
-            <h2>Освіта</h2>
-            <article>
-                <h3>Національний університет «Львівська політехніка»</h3>
-                <p><strong>Спеціальність:</strong> 125 Кібербезпека та захист інформації</p>
-                <p><time datetime="2024">2024</time> — теперішній час</p>
-            </article>
-        </section>
+            <section class="card">
+                <h2>Освіта</h2>
+                <article>
+                    <h3>Національний університет «Львівська політехніка»</h3>
+                    <p><strong>Спеціальність:</strong> 125 Кібербезпека та захист інформації</p>
+                    <p><time datetime="2024">2024</time> — теперішній час</p>
+                </article>
+            </section>
 
-        <section>
-            <h2>Технічні навички</h2>
-            <ul>
-                <li><strong>Мови програмування:</strong> Python, C#, базовий JavaScript / HTML5</li>
-                <li><strong>ОС та адміністрування:</strong> Linux (Ubuntu, Debian, Kali), bash-скрипти, systemd</li>
-                <li><strong>Мережі та безпека:</strong> TCP/IP, Wireshark, Nmap, основи SIEM (Wazuh)</li>
-                <li><strong>Інструменти:</strong> Git, GitHub, VS Code</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Практичний досвід та проєкти</h2>
-            <article>
-                <h3>SOC Home Lab Setup</h3>
-                <p>Розгортання лабораторного середовища для моніторингу подій безпеки та виявлення загроз.</p>
+            <section class="card">
+                <h2>Технічні навички</h2>
                 <ul>
-                    <li>Налаштування pfSense, Wazuh SIEM та Suricata IDS/IPS.</li>
-                    <li>Аналіз телеметрії Sysmon та емуляція мережевих атак.</li>
+                    <li><strong>Мови програмування:</strong> Python, C#, базовий JavaScript / HTML5</li>
+                    <li><strong>ОС та адміністрування:</strong> Linux (Ubuntu, Debian, Kali), bash-скрипти, systemd</li>
+                    <li><strong>Мережі та безпека:</strong> TCP/IP, Wireshark, Nmap, основи SIEM (Wazuh)</li>
+                    <li><strong>Інструменти:</strong> Git, GitHub, VS Code</li>
                 </ul>
-            </article>
-            <article>
-                <h3>Криптографічні утиліти на Python</h3>
-                <p>Розробка скриптів генерації ключів RSA, симетричного шифрування та псевдовипадкових послідовностей (BBS).</p>
-            </article>
-        </section>
-    </main>
+            </section>
 
-    <footer>
-        <p>&copy; 2026 Роман. Всі права захищено. Створено в рамках лабораторної роботи №2.</p>
-    </footer>
+            <section class="card">
+                <h2>Практичний досвід та проєкти</h2>
+                <article>
+                    <h3>SOC Home Lab Setup</h3>
+                    <p>Розгортання лабораторного середовища для моніторингу подій безпеки та виявлення загроз.</p>
+                    <ul>
+                        <li>Налаштування pfSense, Wazuh SIEM та Suricata IDS/IPS.</li>
+                        <li>Аналіз телеметрії Sysmon та емуляція мережевих атак.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Криптографічні утиліти на Python</h3>
+                    <p>Розробка скриптів генерації ключів RSA, симетричного шифрування та псевдовипадкових послідовностей (BBS).</p>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Роман. Всі права захищено. Створено в рамках лабораторної роботи №3.</p>
+        </footer>
+    </div>
 </body>
 </html>

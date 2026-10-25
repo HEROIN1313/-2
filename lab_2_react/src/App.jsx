@@ -7,15 +7,17 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div>
-      <Header />
-      <main>
-        <About />
-        <Education />
-        <Skills />
-        <Experience />
-      </main>
-      <Footer />
+    <div className="min-h-screen bg-slate-100 py-10 px-4 font-sans text-slate-800">
+      <div className="max-w-3xl mx-auto space-y-6">
+        <Header />
+        <main className="space-y-6">
+          <About />
+          <Education />
+          <Skills />
+          <Experience />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }
